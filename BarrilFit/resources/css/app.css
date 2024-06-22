@@ -1,0 +1,350 @@
+/* Importação da fonte 'Poppins' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
+
+/* Estilos básicos aplicados a todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4500;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para a seção de imagem do formulário */
+.img-form {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4500;
+    padding: 1rem;
+}
+
+/* Estilos para a imagem do formulário */
+.img-form img {
+    width: 30rem;
+}
+
+/* Estilos para a seção de formulário */
+.form {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 1rem 1.5rem 1.2rem 1.3rem;
+}
+
+/* Estilos para o cabeçalho do formulário */
+.form-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para o botão de cadastro */
+.buttonCadastro {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para a linha abaixo do título */
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #FF4500;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* Estilos para o parágrafo no cabeçalho do formulário */
+.form-header p {
+    margin-top: 25px;
+}
+
+/* Estilos para os campos de entrada do formulário */
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* Estilos para cada campo de entrada */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    width: 250px;
+    clear: both;
+}
+
+/* Estilos para as caixas de entrada de texto e número */
+.input-box input,
+#dinamicContainer input {
+    margin: 0.2rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1.3px 1.3px 1.5px #0000001c;
+}
+
+/* Estilos para o hover das caixas de entrada */
+.input-box input:hover,
+#dinamicContainer input:hover {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+/* Estilos para o foco das caixas de entrada */
+.input-box input:focus-visible,
+#dinamicContainer input:focus-visible {
+    outline: 1px solid #FF4500;
+}
+
+/* Estilos para os rótulos dos campos de entrada */
+.input-box label,
+.genero-title h5,
+#dinamicContainer label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Estilos para o campo de entrada de altura */
+.input-altura {
+    display: inline-block;
+}
+
+/* Estilos para o grupo de gênero e condições */
+.gender-group,
+.condicoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    padding: 0 0.4rem;
+}
+
+/* Estilos para o campo de entrada de gênero */
+.genero-input {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para o checkbox do campo de entrada de gênero */
+.genero-input input {
+    margin-right: 0.4rem;
+}
+
+/* Estilos para o rótulo do campo de entrada de gênero */
+.genero-input label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* Estilos para o contêiner dinâmico de exercícios */
+#dinamicContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    max-height: 10rem;
+    overflow-y: auto;
+}
+
+/* Estilos para cada caixa de entrada dentro do contêiner dinâmico */
+#dinamicContainer .input-box {
+    width: 250px;
+    margin-bottom: 1.1rem;
+}
+
+/* Estilos para as caixas de entrada dentro do contêiner dinâmico */
+#dinamicContainer .input-box input {
+    margin: 0.2rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1.3px 1.3px 1.5px #0000001c;
+}
+
+/* Estilos para o hover das caixas de entrada dentro do contêiner dinâmico */
+#dinamicContainer .input-box input:hover {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+/* Estilos para o foco das caixas de entrada dentro do contêiner dinâmico */
+#dinamicContainer .input-box input:focus-visible {
+    outline: 1px solid #FF4500;
+}
+
+/* Estilos para os rótulos das caixas de entrada dentro do contêiner dinâmico */
+#dinamicContainer .input-box label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Estilos para os campos de número dentro do contêiner dinâmico */
+#dinamicContainer input[type="number"] {
+    font-size: 0.8rem;
+}
+
+/* Estilos para o botão de adicionar exercício e botões de cadastro */
+.buttonAdd,
+.buttonCadastro button {
+    border: none;
+    margin-top: 1.5rem;
+    max-height: 2rem;
+    background-color: #FF4500;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 0;
+    width: 9rem;
+    height: 9rem;
+    outline: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Estilos para o hover do botão de adicionar exercício e botões de cadastro */
+.buttonAdd:hover,
+.buttonCadastro button:hover {
+    background-color: #ee6736;
+    color: #000000;
+}
+
+/* Estilos para dispositivos com largura máxima de 1230px */
+@media screen and (max-width: 1230px) {
+    /* Esconder a seção de imagem do formulário */
+    .img-form {
+        display: none;
+    }
+
+    /* Redimensionar o contêiner principal */
+    .container {
+        width: 80%;
+    }
+
+    /* Redimensionar o formulário */
+    .form {
+        width: 100%;
+    }
+
+    /* Definir uma altura máxima para o contêiner de campos de entrada e habilitar a rolagem */
+    .form-inputs {
+        max-height: 10rem;
+        overflow-y: auto;
+    }
+
+    /* Definir uma largura máxima e uma altura máxima para o contêiner dinâmico de exercícios e habilitar a rolagem */
+    #dinamicContainer {
+        max-width: 100%;
+        max-height: 7rem;
+        overflow-y: auto;
+    }
+
+    /* Estilos para os rótulos dentro do contêiner dinâmico em dispositivos com largura máxima de 1230px */
+    #dinamicContainer label {
+        font-size: 0.62rem;
+    }
+
+    /* Estilos para os campos de texto dentro do contêiner dinâmico em dispositivos com largura máxima de 1230px */
+    #dinamicContainer input[type="text"] {
+        font-size: 0.7rem;
+    }
+
+    /* Estilos para os campos de número dentro do contêiner dinâmico em dispositivos com largura máxima de 1230px */
+    #dinamicContainer input[type="number"] {
+        font-size: 0.85rem;
+    }
+
+    /* Redimensionar o botão de adicionar exercício e os botões de cadastro em dispositivos com largura máxima de 1230px */
+    .buttonAdd,
+    .buttonCadastro button {
+        max-height: 3rem;
+        max-width: 7rem;
+    }
+}
+
+/* Estilos para dispositivos com largura máxima de 730px */
+@media screen and (max-width: 730px) {
+    /* Redimensionar o contêiner principal */
+    .container {
+        width: 96%;
+        height: auto;
+    }
+
+    /* Reposicionar o cabeçalho do formulário */
+    .form-header {
+        margin-top: 2rem;
+    }
+
+    /* Redimensionar o título do formulário */
+    .form-header h1 {
+        max-height: 3rem;
+    }
+
+    /* Estilos para o contêiner de entrada */
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Estilos para o grupo de gênero */
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    /* Estilos para o grupo de gênero */
+    .gender-group {
+        flex-direction: column;
+    }
+
+    /* Estilos para o campo de entrada de gênero */
+    .genero-input {
+        margin-top: 0.4rem;
+    }
+
+    /* Estilos para o contêiner dinâmico de exercícios em dispositivos com largura máxima de 730px */
+    #dinamicContainer {
+        max-width: 100%;
+        max-height: 10rem;
+    }
+
+    /* Estilos para cada caixa de entrada dentro do contêiner dinâmico em dispositivos com largura máxima de 730px */
+    #dinamicContainer .input-box {
+        width: 100%;
+    }
+
+    /* Estilos para o botão de adicionar exercício em dispositivos com largura máxima de 730px */
+    .buttonAdd {
+        margin-top: 1rem;
+    }
+}
