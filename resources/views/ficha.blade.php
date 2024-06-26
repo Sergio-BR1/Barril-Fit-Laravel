@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="scripts/script.js"></script>
-    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="/assets/scripts/script.js"></script>
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
 
     <title>Barril Fit</title>
 </head>
 <body>
 
-    
+
    <!-- Estrutura principal do formulário -->
 <div class="container">
     <div class = "img-form">
-        <img src = "assets/img/gym-draw.svg" alt = "Animação de personal e aluna de academia">
+        <img src = "/assets/images/gym-draw.svg" alt = "Animação de personal e aluna de academia">
     </div>
 
     <div class = "form">
@@ -71,7 +71,7 @@
 
                 <div class = "gender-group">
                     <div class="genero-input">
-                        <input type = "radio" id = "masculino" name="genero"> 
+                        <input type = "radio" id = "masculino" name="genero">
                         <label for = "masculino">Masculino</label>
                     </div>
 
@@ -81,12 +81,12 @@
                     </div>
 
                     <div class="genero-input">
-                        <input type = "radio" id = "outros" name="genero"> 
+                        <input type = "radio" id = "outros" name="genero">
                         <label for = "outros">Outros</label>
                     </div>
 
                     <div class="genero-input">
-                        <input type = "radio" id = "none" name="genero"> 
+                        <input type = "radio" id = "none" name="genero">
                         <label for = "none">Prefere não dizer</label>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
 </div>
 
 
-    
+
 
 </body>
 </html>
