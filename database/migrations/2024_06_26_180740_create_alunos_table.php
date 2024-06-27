@@ -14,7 +14,11 @@ return new class extends Migration
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('nomecompleto');
+            $table->integer('idade');
+            $table->double('peso', 10, 2);
+            $table->double('altura', 10, 2);
+            $table->text('condicoes_medicas');
+            $table->String('id_genero');
             $table->timestamps();
         });
     }

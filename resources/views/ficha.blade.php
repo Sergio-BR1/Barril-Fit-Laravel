@@ -16,7 +16,7 @@
    <!-- Estrutura principal do formulário -->
 <div class="container">
     <div class = "img-form">
-        <img src = "/assets/images/gym-draw.svg" alt = "Animação de personal e aluna de academia">
+        <img src = "/assets/images/gym-draw.svg" alt = "Ilustração de personal e aluna de academia">
     </div>
 
     <div class = "form">
