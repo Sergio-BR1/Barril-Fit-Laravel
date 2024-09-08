@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
+            $table->string('firstName');
+            $table->string('lastName');
+            $table->string('email')->unique();
             $table->integer('idade');
             $table->double('peso', 10, 2);
             $table->double('altura', 10, 2);

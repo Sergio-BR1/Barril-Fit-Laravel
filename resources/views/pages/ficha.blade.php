@@ -20,7 +20,8 @@
     </div>
 
     <div class = "form">
-        <form action = "#">
+        <form action = "/ficha" method="POST">
+            @csrf
             <!-- Cabeçalho do formulário -->
             <div class="form-header">
                 <div class = "title">
@@ -28,20 +29,30 @@
                     <p>Cadastre o treino do aluno!</p>
                 </div>
                 <div class="buttonCadastro">
-                    <button >Cadastrar treino</button>
+                    <button type="sumbit">Cadastrar treino</button>
                 </div>
             </div>
 
             <!-- Campos de entrada do formulário -->
             <div class = "form-inputs">
                 <div class = "input-box">
-                    <label for = "nome">Primeiro nome e sobrenome </label>
-                    <input id = "nome" type = "text" name = "nome" placeholder = "Digite o nome" required>
+                    <label for = "firstName">Primeiro nome</label>
+                    <input id = "firstName" type = "text" name = "firstName" placeholder = "Digite o nome" required>
+                </div>
+
+                <div class = "input-box">
+                    <label for = "lastName">Sobrenome</label>
+                    <input id = "lastName" type = "text" name = "lastName" placeholder = "Digite o sobrenome" required>
                 </div>
 
                 <div class = "input-box">
                     <label for = "idade">Idade</label>
                     <input id = "idade" type = "number" name = "idade" placeholder = "Digite a idade" min="14" max="150" required>
+                </div>
+
+                <div class = "input-box">
+                    <label for = "email">Sobrenome</label>
+                    <input id = "email" type = "text" name = "email" placeholder = "Digite o email" required>
                 </div>
 
                 <div class = "input-box">
@@ -58,8 +69,8 @@
                 </div>
 
                 <div class = "input-box">
-                    <label for = "conditions">Condições médicas e/ou físicas</label>
-                    <input id = "conditions" type = "text" name = "conditions" placeholder = "Condições médicas do aluno" required>
+                    <label for = "condicoes_medicas">Condições médicas e/ou físicas</label>
+                    <input id = "condicoes_medicas" type = "text" name = "condicoes_medicas" placeholder = "Condições médicas do aluno" required>
                 </div>
             </div>
 
@@ -71,22 +82,22 @@
 
                 <div class = "gender-group">
                     <div class="genero-input">
-                        <input type = "radio" id = "masculino" name="genero">
+                        <input type = "radio" id = "masculino" name="id_genero">
                         <label for = "masculino">Masculino</label>
                     </div>
 
                     <div class="genero-input">
-                        <input type = "radio" id = "feminino" name="genero">
+                        <input type = "radio" id = "feminino" name="id_genero">
                         <label for = "feminino">Feminino</label>
                     </div>
 
                     <div class="genero-input">
-                        <input type = "radio" id = "outros" name="genero">
+                        <input type = "radio" id = "outros" name="id_genero">
                         <label for = "outros">Outros</label>
                     </div>
 
                     <div class="genero-input">
-                        <input type = "radio" id = "none" name="genero">
+                        <input type = "radio" id = "none" name="id_genero">
                         <label for = "none">Prefere não dizer</label>
                     </div>
                 </div>

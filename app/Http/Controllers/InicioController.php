@@ -11,7 +11,7 @@ class InicioController extends Controller
      */
     public function index()
     {
-        return "Início";
+        return view('pages.home');
     }
 
     /**

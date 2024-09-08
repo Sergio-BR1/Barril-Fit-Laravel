@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class FichaController extends Controller
 {
@@ -11,7 +12,7 @@ class FichaController extends Controller
      */
     public function index()
     {
-        return view('ficha');
+        return view('pages.ficha');
     }
 
     /**
@@ -27,7 +28,25 @@ class FichaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $aluno = $request->validate([
+            'firstName' => 'required|string|max:255',
+            'lastName' =>'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'idade' =>'required|integer|min:14|max:99',
+            'peso' =>'required|numeric',
+            'altura' =>'required|numeric',
+            'condicoes_medicas' =>'required|string|max:255',
+            'id_genero' =>'required|in:masculino,feminino,outros,none',
+        ]);
+
+        User::create([
+            'firstName' => $aluno['firstName'],
+            'lastName' => $aluno['lastName'],
+            'email' => $aluno['email'],
+            'password' => bcrypt('12345678'),
+        ]);
+
+        return redirect()->route('/ficha')->with('success', 'Aluno cadastrado com sucesso!');
     }
 
     /**
