@@ -11,23 +11,24 @@
 
 /* Estilos para o corpo da página */
 body {
-    margin:0;
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FF6A38;
+    background-color: #080000;
 }
 
+
 nav {
-    display: flex; /* Transforma o nav em um container flex */
+    display: flex;
     justify-content: space-between;
     background-color: #FFF;
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav .logo{
@@ -55,12 +56,188 @@ div .options {
     margin-right: 25px;
 }
 
-/* Estilos para o contêiner principal */
+.banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+    height: 33em;
+    width: 82em;
+    align-items: center;
+    justify-content: top;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/images/img-banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.11;
+    z-index: -1;
+}
+
+.banner h1{
+    padding-top: 30px;
+    color: #FFF;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.banner .subtitle {
+    font-size: 35px;
+    width: 796px;
+    color: #FFF;
+    padding: 60px;
+    font-weight: bolder;
+}
+
+.banner .texto-planos{
+    font-size: 25px;
+    width: 653 px;
+    color: #FFF;
+    padding: 15x;
+    font-weight: medium;
+}
+
+.botoes-banner {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+
+}
+
+.botoes-banner button {
+    width: 230px;
+    height: 59px;
+    background-color: #FF6A38;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 100px;
+    padding: 50;
+    border: none;
+}
+
+footer h3,p {
+    color: #FFF;
+}
+
+footer {
+    min-height: 330px;
+    background-color: #333333;
+
+
+}
+
+.container-footer {
+    height: 100%;
+    width: 1312px;
+    display: flex;
+
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 180px;
+    gap: 10px;
+}
+
+.footer-column h3 {
+    color: #FF6A38;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-column p {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #FFF;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer a:hover{
+    color: #FF6A38
+}
+
+.copyrights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.copyrights a {
+    margin-left: 3px;
+}
+
+
+
+
+.social-row {
+
+    display: inline-block;
+    margin-top: 8px;
+    gap: 25px;
+
+
+}
+
+i {
+    margin-right: 10px;
+}
+
+
+
+/* Estilos para o container principal */
 .container {
     width: 100%;
     height: 100%;
+}
+
+.container-ficha {
+    width: 100%;
+    height: 100%;
     display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Estilos para a seção de imagem do formulário */
@@ -280,7 +457,7 @@ div .options {
     }
 
     /* Redimensionar o contêiner principal */
-    .container {
+    .container, .container-ficha {
         width: 80%;
     }
 
@@ -328,7 +505,7 @@ div .options {
 /* Estilos para dispositivos com largura máxima de 730px */
 @media screen and (max-width: 730px) {
     /* Redimensionar o contêiner principal */
-    .container {
+    .container, .container-ficha {
         width: 96%;
         height: auto;
     }
