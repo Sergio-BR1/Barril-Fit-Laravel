@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos para o corpo da página */
+
 body {
     box-sizing: border-box;
     width: 100%;
@@ -20,6 +20,13 @@ body {
     background-color: #080000;
 }
 
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para menu */
 
 nav {
     display: flex;
@@ -51,19 +58,22 @@ nav a:hover {
     color: #FFF;
 }
 
+/* Estilos para home */
+
 div .options {
     margin-top: 10px;
     margin-right: 25px;
 }
 
-.banner {
+/* Estilos para banner */
+.banner, .card-container {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 80px;
+    margin-top: 90px;
     text-align: center;
     height: 33em;
-    width: 82em;
+    width: 100%;
     align-items: center;
     justify-content: top;
 }
@@ -124,6 +134,94 @@ div .options {
     padding: 50;
     border: none;
 }
+
+/* Estilos para área de cards */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #FF6A38;
+    gap: 170px;
+    justify-content: center;
+    min-height: 720px;
+    width: 100%;
+}
+
+.card {
+
+    min-width: 269px;
+    min-height: 467px;
+    background-color: #FFF;
+    box-shadow: 1.3px 1.3px 1.5px #0000001c;
+    border-radius: 12px;
+}
+
+.card-header {
+    padding: 12px 0px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.card-info p {
+    margin-left: 10px;
+    color: #1D1B20;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 8px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.card-buttons button {
+    border-radius: 100px;
+    padding: 12px;
+    min-width: 92px;
+    font-weight: 500;
+}
+
+.planos-button {
+    color: #FF6A38;
+    background-color: #FFF;
+    border: 1px solid;
+    border-color: #FF6A38;
+
+}
+
+.planos-button:hover {
+    background-color: #FF6A38;
+    color: #FFF;
+
+}
+
+.conheca-button {
+    background-color: #FF6A38;
+    color: #FFF;
+    border: 1px solid;
+    border-color: #FF6A38;
+
+}
+
+.conheca-button:hover {
+    color: #FF6A38;
+    background-color: #FFF;
+    border: 1px solid;
+
+}
+/* Estilos para footer */
 
 footer h3,p {
     color: #FFF;
@@ -227,12 +325,7 @@ i {
 }
 
 
-
-/* Estilos para o container principal */
-.container {
-    width: 100%;
-    height: 100%;
-}
+/* Estilos para ficha */
 
 .container-ficha {
     margin-top: 28px;
