@@ -66,6 +66,26 @@
             </div>
         </div>
 
+
+    </div>
+
+    <div class="aulas-container">
+
+        <img src="/assets/images/aulas.jpg">
+
+        <div class="aulas-list">
+            <h3>Aulas disponíveis</h3>
+            <ul>
+                <li>Boxe</li>
+                <li>Capoeira</li>
+                <li>Crossfit</li>
+                <li>Muay Thai</li>
+                <li>Karatê</li>
+                <li>Swing Baiano</li>
+                <li>Zumba</li>
+                <li>E muito mais!</li>
+            </ul>
+        </div>
     </div>
 
 
