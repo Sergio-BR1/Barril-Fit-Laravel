@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Aluno;
 
 class FichaController extends Controller
 {
@@ -28,25 +29,28 @@ class FichaController extends Controller
      */
     public function store(Request $request)
     {
-        $aluno = $request->validate([
-            'firstName' => 'required|string|max:255',
-            'lastName' =>'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'idade' =>'required|integer|min:14|max:99',
-            'peso' =>'required|numeric',
-            'altura' =>'required|numeric',
-            'condicoes_medicas' =>'required|string|max:255',
-            'id_genero' =>'required|in:masculino,feminino,outros,none',
-        ]);
 
-        User::create([
-            'firstName' => $aluno['firstName'],
-            'lastName' => $aluno['lastName'],
-            'email' => $aluno['email'],
-            'password' => bcrypt('12345678'),
-        ]);
+        $aluno = new Aluno;
+        $aluno->firstName  = $request->firstName;
+        $aluno->lastName = $request->lastName;
+        $aluno->email = $request->email;
+        $aluno->idade = $request->idade;
+        $aluno->peso = $request->peso;
+        $aluno->altura = $request->altura;
+        $aluno->condicoes_medicas = $request->condicoes_medicas;
+        $aluno->id_genero = $request->id_genero;
+        $aluno->save();
 
-        return redirect()->route('/ficha')->with('success', 'Aluno cadastrado com sucesso!');
+
+        $user = new User();
+        $user->firstName = $request->firstName;
+        $user->lastName = $request->lastName;
+        $user->email = $aluno->email;
+        $user->password = bcrypt('12345678');
+        $user->save();
+
+
+        return redirect()->route('ficha')->with('success', 'Aluno cadastrado com sucesso!');
     }
 
     /**

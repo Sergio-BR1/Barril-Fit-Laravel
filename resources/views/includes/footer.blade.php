@@ -19,9 +19,9 @@
         <div class="footer-column">
             <h3>Redes Sociais</h3>
             <div class="social-row">
-                <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-l" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-l" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-l" style="color: #ffffff;"></i></a>
             </div>
 
         </div>

@@ -6,4 +6,7 @@ use App\Http\Controllers\FichaController;
 
 Route::resource('/', InicioController::class);
 
-Route::resource('/ficha', FichaController::class);
+
+Route::post('/ficha', [FichaController::class, 'store']);
+
+Route::get('/ficha', [FichaController::class, 'index'])->name('ficha');;

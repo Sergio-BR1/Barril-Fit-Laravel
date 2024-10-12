@@ -88,22 +88,28 @@
         </div>
     </div>
 
+
     <div class="inscreva-container">
         <div class="inscreva-card">
             <h3>Inscreva-se</h3>
             <p>Inscreva-se e receba ofertas e novidades da Barril Fit no seu e-mail</p>
-            <div class = "input-inscreva">
-                <label for = "name">Nome</label>
-                <input id = "name" type = "text" name = "name" placeholder = "Digite seu nome" required>
-            </div>
-            <div class = "input-inscreva">
-                <label for = "email">E-mail</label>
-                <input id = "email" type = "text" name = "email" placeholder = "Digite seu e-mail" required>
-            </div>
-            <button class="inscreva-button" type="button">Inscrever</button>
+            <div class = "form">
+                <form action = "/ficha" method="POST">
+                    @csrf
+                <div class = "input-inscreva">
+                    <label for = "name">Nome</label>
+                    <input id = "name" type = "text" name = "name" placeholder = "Digite seu nome" required>
+                </div>
+                <div class = "input-inscreva">
+                    <label for = "email">E-mail</label>
+                    <input id = "email" type = "text" name = "email" placeholder = "Digite seu e-mail" required>
+                </div>
+             <button class="inscreva-button" type="sumbit">Inscrever</button>
+            </form>
         </div>
-
     </div>
+
+</div>
 
 
 @stop
