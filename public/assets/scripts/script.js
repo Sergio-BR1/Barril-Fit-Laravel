@@ -1,4 +1,16 @@
-import './bootstrap';
+
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.menu-icon').src = "assets/images/menu_white_36dp.svg";
+    }
+    else{
+        menuMobile.classList.add('open');
+        document.querySelector('.menu-icon').src = "assets/images/close_white_36dp.svg";
+    }
+}
 
 
 //Função para criar N° de reps, N° de séries e nome do exercício dinamicamente

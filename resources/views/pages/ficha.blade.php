@@ -12,9 +12,8 @@
             @csrf
             <!-- Cabeçalho do formulário -->
             <div class="form-header">
-                <div class = "title">
+                <div class = "ficha-title">
                     <h1>Barril Fit</h1>
-                    <p>Cadastre o treino do aluno!</p>
                 </div>
                 <div class="buttonCadastro">
                     <button type="sumbit">Cadastrar treino</button>

@@ -71,7 +71,9 @@
 
     <div class="aulas-container">
 
-        <img src="/assets/images/aulas.jpg">
+        <div class="aulas-img">
+            
+        </div>
 
         <div class="aulas-list">
             <h3>Aulas disponíveis</h3>
