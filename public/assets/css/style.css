@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #080000;
+    background-color: #000000;
 }
 
 
@@ -43,6 +43,7 @@ body {
     width: 100%;
     z-index: 1;
     opacity: 0.86;
+
 }
 
 .nav-bar .logo{
@@ -58,7 +59,7 @@ body {
     margin-left: 8px;
     padding: 3px;
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .nav-list {
@@ -166,6 +167,7 @@ div .nav-list {
     color: #FFF;
     font-size: 1.625rem;
     font-weight: bolder;
+    letter-spacing: 1.5px;
     border-radius: 100px;
     padding: 50;
     border: none;
@@ -310,9 +312,9 @@ div .nav-list {
     font-weight: bolder;
 }
 
-/* Estilos para sessão Inscreva-se */
+/* Estilos para sessão form-se */
 
-.inscreva-container {
+.form-container {
     width: 100%;
     min-height: 114.83vh;
     background-position: center center;
@@ -324,11 +326,11 @@ div .nav-list {
     position: relative;
 }
 
-.inscreva-container:before {
+.form-container:before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/assets/images/img-inscreva.jpg');
+    background-image: url('/assets/images/img-form.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -337,7 +339,7 @@ div .nav-list {
     z-index: -1;
 }
 
-.inscreva-card {
+.form-card {
     width: 30vw;
     height: 84vh;
     background-color: #FFF;
@@ -348,14 +350,14 @@ div .nav-list {
     justify-content: center;
 }
 
-.inscreva-card h3 {
+.form-card h3, h1 {
     font-size: 3.25rem;
     font-weight: bold;
     color: #FF6A38;
     margin-bottom: 18px;
 }
 
-.inscreva-card p {
+.form-card p {
     font-size: 1.25rem;
     color: #000;
     width: 15.625vw;
@@ -364,13 +366,13 @@ div .nav-list {
     text-align: center;
 }
 
-.input-inscreva {
+.input-form {
     display: flex;
     flex-direction: column;
     gap: 1px;
 }
 
-.input-inscreva label {
+.input-form label {
     font-size: 1.5rem;
     width: 65%;
     margin-bottom: 3px;
@@ -378,7 +380,7 @@ div .nav-list {
 
 }
 
-.input-inscreva input {
+.input-form input {
     width: 20.521vw;
     height: 7.66vh;
     flex-shrink: 0;
@@ -392,13 +394,13 @@ div .nav-list {
     padding: 2px;
 }
 
-.input-inscreva input:hover, input:focus-visible{
+.input-form input:hover, input:focus-visible{
     border: 1px solid #FF6A38;
     background-color: #FFF;
     outline: 1px solid #FF6A38;
 }
 
-.inscreva-button {
+.form-button {
     width: 100%;
     height: 6.41vh;
     font-size: 1.625rem;
@@ -413,10 +415,34 @@ div .nav-list {
     position: center;
 }
 
-.inscreva-button:hover {
+.form-button:hover {
     background-color: #FFF;
     color: #FF6A38;
     border: 1px solid #FF6A38;
+}
+
+.login {
+    width: 100%;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/images/img-login.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.46;
+    z-index: -1;
 }
 
 
@@ -531,11 +557,13 @@ i {
 /* Estilos para ficha */
 
 .container-ficha {
-    margin-top: 90px;
+    margin-top: 80px;
     width: 100%;
     height: 100%;
     display: flex;
 }
+
+
 
 /* Estilos para a seção de imagem do formulário */
 .img-form {
@@ -783,17 +811,19 @@ i {
         font-size: 1.3rem;
     }
 
+
+
     .card-container {
         padding-left: 12px;
         padding-right: 12px;
         gap: 17px;
     }
 
-    .inscreva-card {
+    .form-card {
         height: 75vh;
     }
 
-    .inscreva-card h3 {
+    .form-card h3 {
         font-size: 2rem;
     }
     /* Esconder a seção de imagem do formulário */
@@ -804,7 +834,7 @@ i {
 
     /* Redimensionar o formulário */
     .form {
-        width: 100%;
+        width: 60%;
     }
 
     /* Definir uma altura máxima para o contêiner de campos de entrada e habilitar a rolagem */
@@ -848,6 +878,7 @@ i {
 
     .nav-bar {
         padding: 1.2rem 2rem;
+
     }
 
     .nav-item {
@@ -963,19 +994,19 @@ i {
         font-size: 1.5rem;
     }
 
-    .inscreva-card {
+    .form-card {
         width: 50vw;
     }
 
-    .inscreva-card h3 {
+    .form-card h3 {
         font-size: 2.2rem;
     }
 
-    .inscreva-card p {
+    .form-card p {
         width: 19vh;
     }
 
-    .input-inscreva input {
+    .input-form input {
         width: 33vw;
         font-size: 1rem;
     }
@@ -1031,6 +1062,12 @@ i {
     /* Estilos para o botão de adicionar exercício em dispositivos com largura máxima de 730px */
     .buttonAdd {
         margin-top: 1rem;
+    }
+
+
+    .login::before {
+        background-image: url('/assets/images/img-login-sm.jpg');
+
     }
 
 

@@ -6,7 +6,7 @@
         <p class="subtitle">VENHA PARA A ACADEMIA MAIS BARRIL DOBRADO DA CIDADE!</p>
         <p class="texto-planos">Veja nossos planos e treine na unidade mais próxima de você!</p>
         <div class="botoes-banner">
-            <button class="botao-cadastre" type="button">Cadastre-se</button>
+            <button class="botao-cadastre" type="button">Unidades</button>
             <button class="botao-planos" type="button">Planos</button>
         </div>
 
@@ -72,7 +72,7 @@
     <div class="aulas-container">
 
         <div class="aulas-img">
-            
+
         </div>
 
         <div class="aulas-list">
@@ -91,22 +91,22 @@
     </div>
 
 
-    <div class="inscreva-container">
-        <div class="inscreva-card">
+    <div class="form-container">
+        <div class="form-card">
             <h3>Inscreva-se</h3>
             <p>Inscreva-se e receba ofertas e novidades da Barril Fit no seu e-mail</p>
             <div class = "form">
                 <form action = "/ficha" method="POST">
                     @csrf
-                <div class = "input-inscreva">
+                <div class = "input-form">
                     <label for = "name">Nome</label>
                     <input id = "name" type = "text" name = "name" placeholder = "Digite seu nome" required>
                 </div>
-                <div class = "input-inscreva">
+                <div class = "input-form">
                     <label for = "email">E-mail</label>
                     <input id = "email" type = "text" name = "email" placeholder = "Digite seu e-mail" required>
                 </div>
-             <button class="inscreva-button" type="sumbit">Inscrever</button>
+             <button class="form-button" type="sumbit">Inscrever</button>
             </form>
         </div>
     </div>
