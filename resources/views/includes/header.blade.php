@@ -6,7 +6,7 @@
             <li class="nav-item"><a href="/">Sobre nós</a></li>
             <li class="nav-item"><a href="/">Planos</a></li>
             <li class="nav-item"><a href="/">Contato</a></li>
-            <li class="nav-item"><a href="/">Login</a></li>
+            <li class="nav-item"><a href="{{ route('login') }}">Login</a></li>
         </ul>
     </div>
     <div class="mobile-menu-icon">
@@ -19,7 +19,7 @@
             <li class="nav-item"><a href="/">Sobre nós</a></li>
             <li class="nav-item"><a href="/">Planos</a></li>
             <li class="nav-item"><a href="/">Contato</a></li>
-            <li class="nav-item"><a href="/">Login</a></li>
+            <li class="nav-item"><a href="{{ route('login') }}">Login</a></li>
         </ul>
 </div>
 

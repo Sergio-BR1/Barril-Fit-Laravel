@@ -8,7 +8,7 @@
     </div>
 
     <div class = "form">
-        <form action = "/ficha" method="POST">
+        <form action = "{{ route('ficha.store') }}" method="POST">
             @csrf
             <!-- Cabeçalho do formulário -->
             <div class="form-header">

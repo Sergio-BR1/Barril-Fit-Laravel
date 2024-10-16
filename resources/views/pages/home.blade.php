@@ -91,7 +91,7 @@
     </div>
 
 
-    <div class="form-container">
+    <div class="inscreva-container">
         <div class="form-card">
             <h3>Inscreva-se</h3>
             <p>Inscreva-se e receba ofertas e novidades da Barril Fit no seu e-mail</p>

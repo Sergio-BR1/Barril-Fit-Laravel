@@ -7,11 +7,11 @@ use App\Http\Controllers\LoginController;
 
 Route::resource('/', InicioController::class);
 
+Route::get('/home', [FichaController::class, 'index'])->name('home');
 
-
-Route::post('/ficha', [FichaController::class, 'store']);
+Route::post('/ficha', [FichaController::class, 'store'])->name('ficha.store');
 
 Route::get('/ficha', [FichaController::class, 'index'])->name('ficha');
 
-Route::view('/login', 'login.login')->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/auth', [LoginController::class, 'auth'])->name('login.auth');

@@ -314,7 +314,7 @@ div .nav-list {
 
 /* Estilos para sessão form-se */
 
-.form-container {
+.form-container, .inscreva-container {
     width: 100%;
     min-height: 114.83vh;
     background-position: center center;
@@ -326,11 +326,11 @@ div .nav-list {
     position: relative;
 }
 
-.form-container:before {
+.inscreva-container::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/assets/images/img-form.jpg');
+    background-image: url('/assets/images/img-inscreva.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -557,7 +557,7 @@ i {
 /* Estilos para ficha */
 
 .container-ficha {
-    margin-top: 80px;
+    margin-top: 135px;
     width: 100%;
     height: 100%;
     display: flex;
